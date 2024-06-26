@@ -5,7 +5,7 @@ import service.ITeacherService;
 import service.TeacherServiceImpl;
 
 public class TeacherController {
-    private ITeacherService teacherService = new TeacherServiceImpl();
+    private final ITeacherService teacherService = new TeacherServiceImpl();
 
     public void displayAllTeachers() {
         Teacher[] teachers = teacherService.findAll();
@@ -14,15 +14,5 @@ public class TeacherController {
         }
     }
 
-    public void addTeacher(Teacher teacher) {
 
-    }
-
-    public void updateTeacher(Teacher teacher) {
-
-    }
-
-    public void deleteTeacher(Teacher teacher) {
-
-    }
 }

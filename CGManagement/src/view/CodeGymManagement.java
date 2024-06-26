@@ -53,7 +53,10 @@ public class CodeGymManagement {
                 case 0 : return;
                 case 1 : studentController.displayAllStudents(); break;
                 case 2 :
+                        studentController.addStudent();
+                        break;
                 case 3 :
+
                 case 4 :
             }
         }while(true);

@@ -4,8 +4,11 @@ import service.IStudentService;
 import service.StudentServiceImpl;
 import model.Student;
 
+import java.time.LocalDate;
+import java.util.Scanner;
+
 public class StudentController {
-    private IStudentService studentService = new StudentServiceImpl();
+    private final IStudentService studentService = new StudentServiceImpl();
 
     public void displayAllStudents() {
         Student[] students = studentService.findAll();
@@ -14,15 +17,8 @@ public class StudentController {
         }
     }
 
-    public void addNewStudent() {
-
+    public void addStudent() {
+        studentService.addStudent();
     }
 
-    public void updateStudent() {
-
-    }
-
-    public void deleteStudent() {
-
-    }
 }

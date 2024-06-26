@@ -4,4 +4,5 @@ import model.Teacher;
 
 public interface ITeacherService {
     Teacher[] findAll();
+    void addTeacher();
 }
