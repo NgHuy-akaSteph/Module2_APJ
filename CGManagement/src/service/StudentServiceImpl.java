@@ -3,6 +3,8 @@ import model.Student;
 import repository.IStudentRepo;
 import repository.StudentRepoImpl;
 
+import java.time.LocalDate;
+
 
 public class StudentServiceImpl implements IStudentService{
     private final IStudentRepo studentRepo = new StudentRepoImpl();
@@ -12,7 +14,7 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     @Override
-    public void addStudent() {
-        studentRepo.addStudent();
+    public void addStudent(String name, LocalDate birthday, String email, String className) {
+        studentRepo.addStudent(name, birthday, email, className);
     }
 }

@@ -18,7 +18,17 @@ public class StudentController {
     }
 
     public void addStudent() {
-        studentService.addStudent();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhập tên học viên: ");
+        String name = sc.nextLine();
+        System.out.print("Nhập ngày sinh HV: ");
+        String dob = sc.nextLine();
+        LocalDate birthday = LocalDate.parse(dob);
+        System.out.print("Nhập email của HV: ");
+        String email = sc.nextLine();
+        System.out.print("Nhập lớp học: ");
+        String className = sc.nextLine();
+        studentService.addStudent(name, birthday, email, className);
     }
 
 }

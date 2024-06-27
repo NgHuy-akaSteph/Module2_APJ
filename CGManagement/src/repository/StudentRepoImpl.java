@@ -2,12 +2,11 @@ package repository;
 
 import model.Student;
 import java.time.LocalDate;
-import java.util.Scanner;
+
 
 
 public class StudentRepoImpl implements IStudentRepo {
     private final static Student[] students;
-    static int quantity = 3;
     static {
         students = new Student[5];
         students[0] = new Student(1, "HV-001", "Hung", LocalDate.parse("2004-10-10"), "hungCGHN@gmail.com", "C0324M4");
@@ -21,26 +20,16 @@ public class StudentRepoImpl implements IStudentRepo {
     }
 
     @Override
-    public void addStudent() {
-        int id = quantity + 1;
-        if(id > students.length) {
-            System.out.println("Danh sách đã đủ, không thể thêm HV!");
+    public void addStudent(String name, LocalDate birthday, String email, String className) {
+        for(int i = 0; i < students.length; i++) {
+            if(students[i] == null) {
+                int id = i + 1;
+                String code = "HV-00" + id;
+                students[i] = new Student(id, code, name, birthday, email, className);
+                System.out.println("Thêm học viên thành công!");
+                return;
+            }
         }
-        else{
-            String code = "HV-00" + id;
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Nhập tên học viên: ");
-            String name = sc.nextLine();
-            System.out.print("Nhập ngày sinh HV: ");
-            String dob = sc.nextLine();
-            LocalDate birthday = LocalDate.parse(dob);
-            System.out.println("Nhập email của HV: ");
-            String email = sc.nextLine();
-            System.out.println("Nhập lớp học: ");
-            String className = sc.nextLine();
-            students[quantity] = new Student(id, code, name, birthday, email, className);
-            ++quantity;
-            System.out.println("Thêm học viên thành công!");
-        }
+        System.out.println("Danh sách đã đủ. Không thể thêm học viên!");
     }
 }
