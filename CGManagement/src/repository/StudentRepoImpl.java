@@ -19,10 +19,8 @@ public class StudentRepoImpl implements IStudentRepo {
         return (ArrayList<Student>) students;
     }
 
-    public void addStudent(String name, LocalDate birthday, String email, String className) {
-        int id = students.size();
-        String code = id > 10 ? "HV-0" + id : "HV-00" + id;
-        students.add(new Student(id, code, name, birthday, email, className));
+    public boolean addStudent(int id, String code, String name, LocalDate birthday, String email, String className) {
+        return students.add(new Student(id, code, name, birthday, email, className));
     }
 
     @Override

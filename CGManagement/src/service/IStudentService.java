@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public interface IStudentService {
     ArrayList<Student> findAll();
 
-    void addStudent(String name, LocalDate birthday, String email, String className);
+    boolean addStudent(int id, String code, String name, LocalDate birthday, String email, String className);
 
     boolean removeStudent(int id);
 

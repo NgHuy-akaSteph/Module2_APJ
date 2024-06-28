@@ -15,8 +15,8 @@ public class StudentServiceImpl implements IStudentService{
     }
 
     @Override
-    public void addStudent(String name, LocalDate birthday, String email, String className) {
-        studentRepo.addStudent(name, birthday, email, className);
+    public boolean addStudent(int id, String code,String name, LocalDate birthday, String email, String className) {
+        return studentRepo.addStudent(id, code, name, birthday, email, className);
     }
 
     @Override
