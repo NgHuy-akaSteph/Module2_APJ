@@ -4,11 +4,13 @@ import model.Teacher;
 import repository.ITeacherRepo;
 import repository.TeacherRepoImpl;
 
+import java.util.ArrayList;
+
 public class TeacherServiceImpl implements ITeacherService {
     private final ITeacherRepo teacherRepo = new TeacherRepoImpl();
 
     @Override
-    public Teacher[] findAll() {
+    public ArrayList<Teacher> findAll() {
         return teacherRepo.findAll();
     }
 

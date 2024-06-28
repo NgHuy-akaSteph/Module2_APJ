@@ -2,34 +2,47 @@ package repository;
 
 import model.Student;
 import java.time.LocalDate;
-
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class StudentRepoImpl implements IStudentRepo {
-    private final static Student[] students;
+    private final static List<Student> students = new ArrayList<>();
     static {
-        students = new Student[5];
-        students[0] = new Student(1, "HV-001", "Hung", LocalDate.parse("2004-10-10"), "hungCGHN@gmail.com", "C0324M4");
-        students[1] = new Student(2, "HV-002", "Trung", LocalDate.parse("2003-12-12"), "trungCGHN@gmail.com", "C0324M4");
-        students[2] = new Student(3, "HV-003", "Khanh", LocalDate.parse("2002-05-14"), "hungCGHN@gmail.com", "C0324M4");
+        students.add(new Student(1, "HV-001", "Hung", LocalDate.parse("2004-10-10"), "hungCGHN@gmail.com", "C0324M4"));
+        students.add(new Student(2, "HV-002", "Trung", LocalDate.parse("2003-12-12"), "trungCGHN@gmail.com", "C0324M4"));
+        students.add(new Student(3, "HV-003", "Khanh", LocalDate.parse("2002-05-14"), "hungCGHN@gmail.com", "C0324M4"));
     }
 
     @Override
-    public Student[] findAll() {
-        return students;
+    public ArrayList<Student> findAll() {
+        return (ArrayList<Student>) students;
     }
 
-    @Override
     public void addStudent(String name, LocalDate birthday, String email, String className) {
-        for(int i = 0; i < students.length; i++) {
-            if(students[i] == null) {
-                int id = i + 1;
-                String code = "HV-00" + id;
-                students[i] = new Student(id, code, name, birthday, email, className);
-                System.out.println("Thêm học viên thành công!");
-                return;
+        int id = students.size();
+        String code = id > 10 ? "HV-0" + id : "HV-00" + id;
+        students.add(new Student(id, code, name, birthday, email, className));
+    }
+
+    @Override
+    public boolean removeStudent(int id) {
+        return students.removeIf(student -> student.getId() == id);
+    }
+
+    @Override
+    public boolean updateStudent(int id, String name, LocalDate birthday, String email, String className) {
+        boolean found = false;
+        for (Student student : students) {
+            if (student.getId() == id) {
+                student.setName(name);
+                student.setBirthday(birthday);
+                student.setEmail(email);
+                student.setClassName(className);
+                found = true;
+                break;
             }
         }
-        System.out.println("Danh sách đã đủ. Không thể thêm học viên!");
+        return found;
     }
 }

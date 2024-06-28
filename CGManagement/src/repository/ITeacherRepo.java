@@ -2,7 +2,9 @@ package repository;
 
 import model.Teacher;
 
+import java.util.ArrayList;
+
 public interface ITeacherRepo {
-    Teacher[] findAll();
+    ArrayList<Teacher> findAll();
     void addStudent();
 }

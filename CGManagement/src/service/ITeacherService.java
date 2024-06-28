@@ -2,7 +2,9 @@ package service;
 
 import model.Teacher;
 
+import java.util.ArrayList;
+
 public interface ITeacherService {
-    Teacher[] findAll();
+    ArrayList<Teacher> findAll();
     void addTeacher();
 }

@@ -56,8 +56,13 @@ public class CodeGymManagement {
                         studentController.addStudent();
                         break;
                 case 3 :
-
+                        studentController.removeStudent();
+                        break;
                 case 4 :
+                        studentController.updateStudent();
+                        break;
+                default:
+                    System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
             }
         }while(true);
 
@@ -80,6 +85,8 @@ public class CodeGymManagement {
                 case 2 :
                 case 3 :
                 case 4 :
+                default:
+                    System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
             }
         }while(true);
     }
