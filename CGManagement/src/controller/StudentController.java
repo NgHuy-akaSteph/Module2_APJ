@@ -5,7 +5,7 @@ import service.StudentServiceImpl;
 import model.Student;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -19,7 +19,7 @@ public class StudentController {
 
     // In toàn bộ danh sách học viên
     public void displayAllStudents() {
-        ArrayList<Student> students = studentService.findAll();
+        List<Student> students = studentService.findAll();
         for(Student student : students) {
             System.out.println(student);
         }

@@ -4,13 +4,13 @@ import repository.IStudentRepo;
 import repository.StudentRepoImpl;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class StudentServiceImpl implements IStudentService{
     private final IStudentRepo studentRepo = new StudentRepoImpl();
 
-    public ArrayList<Student> findAll() {
+    public List<Student> findAll() {
         return studentRepo.findAll();
     }
 

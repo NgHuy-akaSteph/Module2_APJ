@@ -15,8 +15,8 @@ public class StudentRepoImpl implements IStudentRepo {
     }
 
     @Override
-    public ArrayList<Student> findAll() {
-        return (ArrayList<Student>) students;
+    public List<Student> findAll() {
+        return students;
     }
 
     public boolean addStudent(int id, String code, String name, LocalDate birthday, String email, String className) {
