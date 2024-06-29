@@ -16,6 +16,13 @@ public class StudentServiceImpl implements IStudentService{
 
     @Override
     public boolean addStudent(int id, String code,String name, LocalDate birthday, String email, String className) {
+        List<Student> students = findAll();
+        if(students.isEmpty()){
+            id = 1;
+        }
+        else{
+            id = students.getLast().getId() + 1;
+        }
         return studentRepo.addStudent(id, code, name, birthday, email, className);
     }
 

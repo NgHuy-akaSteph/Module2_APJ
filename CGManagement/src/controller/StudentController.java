@@ -12,10 +12,9 @@ import java.util.Scanner;
 
 public class StudentController {
     private final IStudentService studentService = new StudentServiceImpl();
-
+    private final Scanner sc = new Scanner(System.in);
     // Biến nhập input từ màn hình
     public String inputCode,inputName, inputEmail, inputClassName, inputDOB;
-    public int inputId;
 
     // In toàn bộ danh sách học viên
     public void displayAllStudents() {
@@ -27,9 +26,6 @@ public class StudentController {
 
     // Nhập liệu từ màn hình console
     public void inputFromScreen() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Nhập ID học viên: ");
-        inputId = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập vào mã sinh viên: ");
         inputCode = sc.nextLine();
         System.out.print("Nhập tên học viên: ");
@@ -45,7 +41,7 @@ public class StudentController {
     // Thêm học viên vào danh sách
     public void addStudent() {
         inputFromScreen();
-        boolean isAdded = studentService.addStudent(inputId, inputCode, inputName, LocalDate.parse(inputDOB), inputEmail, inputClassName);
+        boolean isAdded = studentService.addStudent(0, inputCode, inputName, LocalDate.parse(inputDOB), inputEmail, inputClassName);
         if(isAdded){
             System.out.println("Danh sách sinh viên mới là: ");
             displayAllStudents();
