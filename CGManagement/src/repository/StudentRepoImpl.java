@@ -43,4 +43,15 @@ public class StudentRepoImpl implements IStudentRepo {
         }
         return found;
     }
+
+    @Override
+    public List<Student> getStudentsByName(String name) {
+        List<Student> studentList = new ArrayList<>();
+        for(Student student : students) {
+            if(student.getName().contains(name)){
+                studentList.add(student);
+            }
+        }
+        return studentList;
+    }
 }

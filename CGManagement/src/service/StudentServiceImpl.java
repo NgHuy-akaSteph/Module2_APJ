@@ -35,4 +35,9 @@ public class StudentServiceImpl implements IStudentService{
         return studentRepo.updateStudent(id, name, birthday, email, className);
     }
 
+    @Override
+    public List<Student> getStudentsByName(String name) {
+        return studentRepo.getStudentsByName(name);
+    }
+
 }

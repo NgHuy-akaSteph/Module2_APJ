@@ -53,7 +53,6 @@ public class StudentController {
 
     // Xóa học viên khỏi danh sách
     public void removeStudent() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Nhập id của sinh viên cần xóa: ");
         int id = Integer.parseInt(sc.nextLine());
         boolean isRemoved = studentService.removeStudent(id);
@@ -66,7 +65,6 @@ public class StudentController {
     }
 
     public void updateStudent() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Nhập id của sinh viên cần sửa: ");
         int id = Integer.parseInt(sc.nextLine());
         inputFromScreen();
@@ -75,6 +73,20 @@ public class StudentController {
         }
         else{
             System.out.println("Id không tồn tại!");
+        }
+    }
+
+    public void getStudentsByName() {
+        String name;
+        do {
+            System.out.print("Nhập tên sinh viên cần tìm kiếm: ");
+            name = sc.nextLine();
+            if(name.isEmpty())
+                System.out.println("Bạn chưa nhập tên để tìm kiếm!\n");
+        }while (name.isEmpty());
+        List<Student> studentList = studentService.getStudentsByName(name);
+        for(Student student : studentList){
+            System.out.println(student);
         }
     }
 }

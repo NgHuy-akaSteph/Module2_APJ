@@ -13,4 +13,6 @@ public interface IStudentService {
     boolean removeStudent(int id);
 
     boolean updateStudent(int id, String name, LocalDate birthday, String email, String className);
+
+    List<Student> getStudentsByName(String name);
 }

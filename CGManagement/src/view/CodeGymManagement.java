@@ -46,21 +46,26 @@ public class CodeGymManagement {
                     2. Thêm học viên
                     3. Xóa học viên
                     4. Chỉnh sửa thông tin HV
+                    5. Tìm kiếm sinh viên theo tên
                     0. Quay lại trang chủ
                     Nhập lựa chọn :\s""");
             int opt = Integer.parseInt(sc.nextLine());
             switch (opt){
                 case 0 : return;
-                case 1 : studentController.displayAllStudents(); break;
+                case 1 :
+                    studentController.displayAllStudents(); break;
                 case 2 :
-                        studentController.addStudent();
-                        break;
+                    studentController.addStudent();
+                    break;
                 case 3 :
-                        studentController.removeStudent();
-                        break;
+                    studentController.removeStudent();
+                    break;
                 case 4 :
-                        studentController.updateStudent();
-                        break;
+                    studentController.updateStudent();
+                    break;
+                case 5:
+                    studentController.getStudentsByName();
+                    break;
                 default:
                     System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
             }
