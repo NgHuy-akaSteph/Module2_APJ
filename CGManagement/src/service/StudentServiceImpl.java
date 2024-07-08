@@ -21,7 +21,7 @@ public class StudentServiceImpl implements IStudentService{
             id = 1;
         }
         else{
-            id = students.getLast().getId() + 1;
+            id = students.get(students.size() - 1).getId() + 1;
         }
         return studentRepo.addStudent(id, code, name, birthday, email, className);
     }

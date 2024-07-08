@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="">
+    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="update getStudentsByName()">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CGManagement/CGManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS10_List_Set/SS10_List_Set.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS13_SearchAlgorithm/SS13_SearchAlgorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS5_AccessModifier_StaticMethod_StaticProperty/SS5_AccessModifier_StaticMethod_StaticProperty.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS6_Inheritance_Polymorphism/SS6_Inheritance_Polymorphism.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/SS7_AbstractClass_Interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffOffice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffShipper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffWorkshop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SS8_CleanCode_Refactoring/SS8_CleanCode_Refactoring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGManagement/src/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/service/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myArrayList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myArrayList/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myArrayList/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myArrayList/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/resizeable_colorable/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/resizeable_colorable/Colorable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +38,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -22,32 +46,88 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NgHuy-akaSteph&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NgHuy-akaSteph/Module2_APJ.git&quot;,
+    &quot;accountId&quot;: &quot;42ea61b2-1933-4106-bf64-ab487c7f619d&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2hjD7HXs5JSaYjHCwjJvuYNmWWw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.B.executor": "Run",
+    "Application.CircleTest.executor": "Run",
+    "Application.CodeGymManagement.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Merge2Arrays.executor": "Run",
+    "Application.RectangleTest.executor": "Run",
+    "Application.ShapeTest.executor": "Run",
+    "Application.SortAlgo.executor": "Run",
+    "Application.SquareTest.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TestCircle.executor": "Run",
+    "Application.halo.executor": "Run",
+    "Application.test.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
+    "Notification.DoNotAsk-WindowsDefender": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "H:/C032M4_JV103/Module2_APJ",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="git add ." />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="SS7_AbstractClass_Interface" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
       </set>
     </attachedChunks>
   </component>
@@ -62,10 +142,238 @@
       <workItem from="1718098425460" duration="213000" />
       <workItem from="1718105749651" duration="2856000" />
       <workItem from="1718112151064" duration="2094000" />
+      <workItem from="1718157818169" duration="350000" />
+      <workItem from="1718159206389" duration="2424000" />
+      <workItem from="1718163718443" duration="16000" />
+      <workItem from="1718203233418" duration="10000" />
+      <workItem from="1718203515709" duration="3000" />
+      <workItem from="1718262564566" duration="4148000" />
+      <workItem from="1718278399064" duration="6025000" />
+      <workItem from="1718291234123" duration="143000" />
+      <workItem from="1718291415410" duration="2969000" />
+      <workItem from="1718372940477" duration="16000" />
+      <workItem from="1718373335286" duration="62000" />
+      <workItem from="1718373408297" duration="350000" />
+      <workItem from="1718373938174" duration="170000" />
+      <workItem from="1718417805335" duration="2658000" />
+      <workItem from="1718434580459" duration="698000" />
+      <workItem from="1718450899918" duration="3249000" />
+      <workItem from="1718634344473" duration="1445000" />
+      <workItem from="1718636982856" duration="1972000" />
+      <workItem from="1718676582434" duration="259000" />
+      <workItem from="1718676850116" duration="40000" />
+      <workItem from="1718676896152" duration="2483000" />
+      <workItem from="1718694716130" duration="1217000" />
+      <workItem from="1718710121310" duration="4208000" />
+      <workItem from="1718718221151" duration="59000" />
+      <workItem from="1718718285373" duration="24000" />
+      <workItem from="1718755420000" duration="598000" />
+      <workItem from="1718789199143" duration="2033000" />
+      <workItem from="1718810605437" duration="1884000" />
+      <workItem from="1718865450279" duration="3624000" />
+      <workItem from="1718887558744" duration="726000" />
+      <workItem from="1718890694389" duration="12000" />
+      <workItem from="1718896555730" duration="1795000" />
+      <workItem from="1718983187421" duration="1380000" />
+      <workItem from="1719041467397" duration="2755000" />
+      <workItem from="1719059827117" duration="51000" />
+      <workItem from="1719059885798" duration="136000" />
+      <workItem from="1719063678278" duration="77000" />
+      <workItem from="1719190304718" duration="32000" />
+      <workItem from="1719190342910" duration="292000" />
+      <workItem from="1719279098250" duration="10150000" />
+      <workItem from="1719305281132" duration="757000" />
+      <workItem from="1719310815128" duration="165000" />
+      <workItem from="1719314460313" duration="5563000" />
+      <workItem from="1719327452733" duration="2921000" />
+      <workItem from="1719408731958" duration="5594000" />
+      <workItem from="1719455257371" duration="3809000" />
+      <workItem from="1719474848198" duration="6046000" />
+      <workItem from="1719487977774" duration="3611000" />
+      <workItem from="1719499753182" duration="964000" />
+      <workItem from="1719500732055" duration="2981000" />
+      <workItem from="1719503838410" duration="350000" />
+      <workItem from="1719540836858" duration="853000" />
+      <workItem from="1719580620348" duration="1610000" />
+      <workItem from="1719660819697" duration="1749000" />
+      <workItem from="1719666780569" duration="3926000" />
+      <workItem from="1720014543090" duration="6000" />
+      <workItem from="1720098968038" duration="928000" />
+      <workItem from="1720143760916" duration="2461000" />
+      <workItem from="1720228329596" duration="82000" />
+      <workItem from="1720228433610" duration="1699000" />
+      <workItem from="1720268917756" duration="3712000" />
+      <workItem from="1720321938935" duration="15000" />
+      <workItem from="1720321971033" duration="220000" />
+      <workItem from="1720322964663" duration="216000" />
+      <workItem from="1720449637105" duration="1617000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1718157981609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718157981609</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <option name="closed" value="true" />
+      <created>1718158036190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718158036190</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1718158140113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718158140113</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1718266026867</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718266026867</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ss4_class_object">
+      <option name="closed" value="true" />
+      <created>1718293022470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718293022470</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ss5_am_static">
+      <option name="closed" value="true" />
+      <created>1718638813265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718638813265</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ss6_Inheritance_Polymorphism">
+      <option name="closed" value="true" />
+      <created>1718867060588</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718867060588</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ss7_AbstractClass_Interface">
+      <option name="closed" value="true" />
+      <created>1719043787230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719043787230</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <option name="closed" value="true" />
+      <created>1719310866855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719310866855</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <option name="closed" value="true" />
+      <created>1719413041405</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719413041405</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <option name="closed" value="true" />
+      <created>1719458558063</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719458558063</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <option name="closed" value="true" />
+      <created>1719540884613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719540884613</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <option name="closed" value="true" />
+      <created>1719581943001</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719581943001</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <option name="closed" value="true" />
+      <created>1719669695536</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719669695536</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <option name="closed" value="true" />
+      <created>1719671629468</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719671629468</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update getStudentsByName()">
+      <option name="closed" value="true" />
+      <created>1720145782390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720145782390</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ss4_class_object" />
+    <MESSAGE value="ss5_am_static" />
+    <MESSAGE value="ss6_Inheritance_Polymorphism" />
+    <MESSAGE value="ss7_AbstractClass_Interface" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update getStudentsByName()" />
+    <option name="LAST_COMMIT_MESSAGE" value="update getStudentsByName()" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
