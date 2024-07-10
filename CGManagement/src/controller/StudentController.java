@@ -4,6 +4,9 @@ import service.IStudentService;
 import service.StudentServiceImpl;
 import model.Student;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -87,6 +90,18 @@ public class StudentController {
         List<Student> studentList = studentService.getStudentsByName(name);
         for(Student student : studentList){
             System.out.println(student);
+        }
+    }
+    // Xuất file CSV
+    public void exportToCSV() {
+        try (FileWriter fileWriter = new FileWriter("CGManagement/src/view/students.csv", false)){
+            fileWriter.write("Class\tID\tCode\tName\tBirthday\tEmail\n");
+            List<Student> students = studentService.findAll();
+            for(Student student : students){
+                fileWriter.write(student.getClassName() + "\t" + student.getId() + "\t" + student.getCode() + "\t" + student.getName() + "\t" + student.getBirthday() + "\t" + student.getEmail() + "\n");
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
         }
     }
 }

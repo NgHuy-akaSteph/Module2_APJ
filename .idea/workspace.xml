@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="update getStudentsByName()">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CGManagement/CGManagement.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS10_List_Set/SS10_List_Set.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS13_SearchAlgorithm/SS13_SearchAlgorithm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS5_AccessModifier_StaticMethod_StaticProperty/SS5_AccessModifier_StaticMethod_StaticProperty.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS6_Inheritance_Polymorphism/SS6_Inheritance_Polymorphism.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/SS7_AbstractClass_Interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffShipper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/BT1/StaffWorkshop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SS8_CleanCode_Refactoring/SS8_CleanCode_Refactoring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="ss15_exception_debug">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CGManagement/src/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/service/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myArrayList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myArrayList/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myArrayList/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myArrayList/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS10_DSA_List_Set/src/myLinkedList/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS10_List_Set/src/myLinkedList/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/resizeable_colorable/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/SS7_AbstractClass_Interface/src/resizeable_colorable/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGManagement/src/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGManagement/src/view/CodeGymManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/view/CodeGymManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,41 +49,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.B.executor": "Run",
-    "Application.CircleTest.executor": "Run",
-    "Application.CodeGymManagement.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Merge2Arrays.executor": "Run",
-    "Application.RectangleTest.executor": "Run",
-    "Application.ShapeTest.executor": "Run",
-    "Application.SortAlgo.executor": "Run",
-    "Application.SquareTest.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.TestCircle.executor": "Run",
-    "Application.halo.executor": "Run",
-    "Application.test.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender configuration",
-    "Notification.DoNotAsk-WindowsDefender": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "H:/C032M4_JV103/Module2_APJ",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.B.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CodeGymManagement.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Merge2Arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShapeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortAlgo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SquareTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestCircle.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TriangleChecker.executor&quot;: &quot;Run&quot;,
+    &quot;Application.X.executor&quot;: &quot;Run&quot;,
+    &quot;Application.halo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-WindowsDefender&quot;: &quot;Microsoft Defender configuration&quot;,
+    &quot;Notification.DoNotAsk-WindowsDefender&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/C032M4_JV103/Module2_APJ&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\C032M4_JV103\Module2_APJ\CGManagement\src" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="git add ." />
@@ -206,7 +196,11 @@
       <workItem from="1720321938935" duration="15000" />
       <workItem from="1720321971033" duration="220000" />
       <workItem from="1720322964663" duration="216000" />
-      <workItem from="1720449637105" duration="1617000" />
+      <workItem from="1720449637105" duration="2536000" />
+      <workItem from="1720514530646" duration="755000" />
+      <workItem from="1720533597599" duration="697000" />
+      <workItem from="1720597130642" duration="5015000" />
+      <workItem from="1720603536501" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -336,7 +330,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720145782390</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update">
+      <option name="closed" value="true" />
+      <created>1720452068197</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720452068197</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ss15_exception_debug">
+      <option name="closed" value="true" />
+      <created>1720599214342</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720599214342</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ss15_exception_debug">
+      <option name="closed" value="true" />
+      <created>1720600189622</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720600189622</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,9 +376,10 @@
     <MESSAGE value="ss5_am_static" />
     <MESSAGE value="ss6_Inheritance_Polymorphism" />
     <MESSAGE value="ss7_AbstractClass_Interface" />
-    <MESSAGE value="update" />
     <MESSAGE value="update getStudentsByName()" />
-    <option name="LAST_COMMIT_MESSAGE" value="update getStudentsByName()" />
+    <MESSAGE value="update" />
+    <MESSAGE value="ss15_exception_debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="ss15_exception_debug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

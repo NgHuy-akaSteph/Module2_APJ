@@ -4,7 +4,6 @@ import controller.StudentController;
 import controller.TeacherController;
 
 import java.util.Scanner;
-//view -> controller -> service -> repo
 
 public class CodeGymManagement {
     private final static Scanner sc = new Scanner(System.in);
@@ -47,6 +46,7 @@ public class CodeGymManagement {
                     3. Xóa học viên
                     4. Chỉnh sửa thông tin HV
                     5. Tìm kiếm sinh viên theo tên
+                    6. Xuất file CSV
                     0. Quay lại trang chủ
                     Nhập lựa chọn :\s""");
             int opt = Integer.parseInt(sc.nextLine());
@@ -65,6 +65,9 @@ public class CodeGymManagement {
                     break;
                 case 5:
                     studentController.getStudentsByName();
+                    break;
+                case 6:
+                    studentController.exportToCSV();
                     break;
                 default:
                     System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
