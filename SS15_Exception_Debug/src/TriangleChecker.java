@@ -14,7 +14,8 @@ public class TriangleChecker {
             System.out.println("Tam giác hợp lệ.");
         }
         catch (IllegalTriangleException e) {
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());// ghi thông báo ngoại lệ
+
         }
     }
 
