@@ -5,8 +5,7 @@ import service.StudentServiceImpl;
 import model.Student;
 
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
@@ -94,11 +93,45 @@ public class StudentController {
     }
     // Xuất file CSV
     public void exportToCSV() {
-        try (FileWriter fileWriter = new FileWriter("CGManagement/src/view/students.csv", false)){
+
+        try {
+            File directory = new File("CGManagement/src/view/");
+            if (! directory.exists()){
+                boolean result = directory.mkdirs();
+                if (!result) {
+                    throw new IOException("Failed to create directory " + directory.getPath());
+                }
+            }
+            FileWriter fileWriter = new FileWriter(new File(directory, "students.csv"), false);
+
             fileWriter.write("Class\tID\tCode\tName\tBirthday\tEmail\n");
             List<Student> students = studentService.findAll();
             for(Student student : students){
-                fileWriter.write(student.getClassName() + "\t" + student.getId() + "\t" + student.getCode() + "\t" + student.getName() + "\t" + student.getBirthday() + "\t" + student.getEmail() + "\n");
+                fileWriter.write(student.getClassName() + "\t"
+                        + student.getId() + "\t"
+                        + student.getCode() + "\t"
+                        + student.getName() + "\t"
+                        + student.getBirthday() + "\t"
+                        + student.getEmail() + "\n");
+            }
+            fileWriter.close();
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
+    }
+
+    public void importFromCSV() {
+        try {
+            FileReader inputFile = new FileReader("CGManagement/src/view/students.csv");
+            BufferedReader reader = new BufferedReader(inputFile);
+            reader.readLine();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] data = line.split("\t");
+                for(String s : data){
+                    System.out.print(s + " ");
+                }
+                System.out.println();
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());

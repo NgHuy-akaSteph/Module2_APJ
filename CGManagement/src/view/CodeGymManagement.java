@@ -47,6 +47,7 @@ public class CodeGymManagement {
                     4. Chỉnh sửa thông tin HV
                     5. Tìm kiếm sinh viên theo tên
                     6. Xuất file CSV
+                    7. Nhập file CSV
                     0. Quay lại trang chủ
                     Nhập lựa chọn :\s""");
             int opt = Integer.parseInt(sc.nextLine());
@@ -68,6 +69,9 @@ public class CodeGymManagement {
                     break;
                 case 6:
                     studentController.exportToCSV();
+                    break;
+                case 7:
+                    studentController.importFromCSV();
                     break;
                 default:
                     System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
