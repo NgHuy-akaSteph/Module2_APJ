@@ -27,4 +27,12 @@ public class Student extends Person {
                 + super.toString()
                 + "}";
     }
+
+//    public String toLine() {
+//        return "Student{" +
+//                "className='" + className + "', "
+//                + super.toString()
+//                + "}";
+//    }
+
 }

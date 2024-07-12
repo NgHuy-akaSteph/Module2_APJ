@@ -45,9 +45,10 @@ public class CodeGymManagement {
                     2. Thêm học viên
                     3. Xóa học viên
                     4. Chỉnh sửa thông tin HV
-                    5. Tìm kiếm sinh viên theo tên
-                    6. Xuất file CSV
-                    7. Nhập file CSV
+                    5. Tìm kiếm học viên theo tên
+                    6. Xuất file CSV từ List
+                    7. Thêm học viên vào file CSV
+                    8. Hiển thị danh sách học viên từ file CSV
                     0. Quay lại trang chủ
                     Nhập lựa chọn :\s""");
             int opt = Integer.parseInt(sc.nextLine());
@@ -71,7 +72,10 @@ public class CodeGymManagement {
                     studentController.exportToCSV();
                     break;
                 case 7:
-                    studentController.importFromCSV();
+                    studentController.addStudentToCSV();
+                    break;
+                case 8:
+                    studentController.displayAllStudentsFromCSV();
                     break;
                 default:
                     System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
@@ -79,7 +83,6 @@ public class CodeGymManagement {
         }while(true);
 
     }
-
     public static void TeacherManagement() {
         TeacherController teacherController = new TeacherController();
         do{
