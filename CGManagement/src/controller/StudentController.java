@@ -7,9 +7,7 @@ import model.Student;
 
 import java.io.*;
 import java.time.LocalDate;
-import java.util.List;
-import java.util.Scanner;
-
+import java.util.*;
 
 
 public class StudentController {
@@ -112,59 +110,45 @@ public class StudentController {
         }
     }
 
-//    public void importFromCSV() {
-//        try (FileReader inputFile = new FileReader("CGManagement/src/view/students.csv");
-//             BufferedReader reader = new BufferedReader(inputFile)
-//        ) {
-//            reader.readLine();
-//            String line;
-//            while ((line = reader.readLine()) != null) {
-//                String[] data = line.split("\t");
-//                for(String s : data){
-//                    System.out.print(s + " ");
-//                }
-//                System.out.println();
-//            }
-//        } catch (IOException e) {
-//            System.err.println(e.getMessage());
-//        }
-//    }
-
-    /*
+    /**
      CRUD using file CSV
      Create: Thêm học viên vào file CSV
      Read: Đọc toàn bộ học viên từ file CSV
      Update: Cập nhật thông tin học viên trong file CSV
      Delete: Xóa học viên khỏi file CSV
      */
-    public List<Student> cloneCSVToList(File file) {
-        List<Student> students = null;
+    File file = new File("CGManagement/src/view/students_data.csv");
+
+    //chuyển dữ liệu từ file CSV thành List<Student>
+    public List<Student> convertCSVToList(File file) {
+        List<Student> list = new ArrayList<>();
         try (FileReader fileReader = new FileReader(file);
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             bufferedReader.readLine();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] data = line.split("\t");
+                String[] data = line.split(",");
                 Student student = new Student(Integer.parseInt(data[1]), data[2], data[3], LocalDate.parse(data[4]), data[5], data[0]);
-                students.add(student);
+                list.add(student);
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
 
         }
-        return students;
+        return list;
     }
+
 
     public void addStudentToCSV() {
         inputFromConsole();
         try ( FileWriter fileWriter = new FileWriter("CGManagement/src/view/students_data.csv", true);
               BufferedWriter bufferedWriter = new BufferedWriter(fileWriter) )
         {
-            bufferedWriter.write(inputClassName + ", "
-                    + "0" + ", "
-                    + inputCode + ", "
-                    + inputName + ", "
-                    + LocalDate.parse(inputDOB) + ", "
+            bufferedWriter.write(inputClassName + ","
+                    + "0" + ","
+                    + inputCode + ","
+                    + inputName + ","
+                    + LocalDate.parse(inputDOB) + ","
                     + inputEmail);
             bufferedWriter.newLine();
             System.out.println("Thêm sinh viên thành công!");
@@ -178,15 +162,15 @@ public class StudentController {
              BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] data = line.split(", ");
-                    System.out.println("Student {" +
-                            "id=" + data[1] +
-                            ", code='" + data[2] + '\'' +
-                            ", name='" + data[3] + '\'' +
-                            ", birthday=" + data[4] +
-                            ", email='" + data[5] + '\'' +
-                            ", className='" + data[0] + '\'' +
-                            '}');
+                String[] data = line.split(",");
+                System.out.println("Student {" +
+                        "id=" + data[1] +
+                        ", code='" + data[2] + '\'' +
+                        ", name='" + data[3] + '\'' +
+                        ", birthday=" + data[4] +
+                        ", email='" + data[5] + '\'' +
+                        ", className='" + data[0] + '\'' +
+                        '}');
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
@@ -195,11 +179,78 @@ public class StudentController {
     }
 
     public void updateStudentInCSV() {
-
+        System.out.print("Nhập mã của học viên cần sửa thông tin: ");
+        String code = sc.nextLine();
+        inputFromConsole();
+        List<Student> students = convertCSVToList(file);
+        boolean isUpdated = false;
+        for(Student student : students) {
+            if(Objects.equals(student.getCode(), code)) {
+                student.setName(inputName);
+                student.setBirthday(LocalDate.parse(inputDOB));
+                student.setEmail(inputEmail);
+                student.setClassName(inputClassName);
+                isUpdated = true; break;
+            }
+        }
+        if(isUpdated) {
+            try ( FileWriter fileWriter = new FileWriter("CGManagement/src/view/students_data.csv", false);
+                  BufferedWriter bufferedWriter = new BufferedWriter(fileWriter) )
+            {
+                for(Student student : students) {
+                    bufferedWriter.write(student.getClassName() + ","
+                            + student.getId() + ","
+                            + student.getCode() + ","
+                            + student.getName() + ","
+                            + student.getBirthday() + ","
+                            + student.getEmail());
+                    bufferedWriter.newLine();
+                }
+                System.out.println("Thông tin học viên " + code + " đã được cập nhật!");
+            } catch (IOException e) {
+                System.err.println(e.getMessage());
+            }
+        }
+        else{
+            System.out.println("Không tìm thấy học viên có mã " + code + " trong danh sách!");
+        }
     }
 
     public void deleteStudentInCSV() {
+        System.out.print("Nhập mã của học viên cần xóa: ");
+        String code = sc.nextLine();
+        List<Student> students = convertCSVToList(file);
+        boolean isDeleted = false;
 
+        Iterator<Student> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            Student student = iterator.next();
+            if (student.getCode().equals(code)) {
+                iterator.remove();
+                isDeleted = true;
+                break;
+            }
+        }
+
+        if (isDeleted) {
+            try (FileWriter fileWriter = new FileWriter("CGManagement/src/view/students_data.csv", false);
+                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+                for (Student student : students) {
+                    bufferedWriter.write(student.getClassName() + ","
+                            + student.getId() + ","
+                            + student.getCode() + ","
+                            + student.getName() + ","
+                            + student.getBirthday() + ","
+                            + student.getEmail());
+                    bufferedWriter.newLine();
+                }
+                System.out.println("Học viên " + code + " đã được xóa khỏi danh sách!");
+            } catch (IOException e) {
+                System.err.println(e.getMessage());
+            }
+        } else {
+            System.out.println("Không tìm thấy học viên có mã " + code + " trong danh sách!");
+        }
     }
 
 }

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="ss15_exception_debug">
+    <list default="true" id="a1c1ba19-c534-44ec-88ee-caa48a957556" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGManagement/src/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CGManagement/src/view/CodeGymManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/view/CodeGymManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGManagement/src/view/students.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CGManagement/src/view/students.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CGManagement/src/view/students_data.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.B.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CharArrInput.executor&quot;: &quot;Run&quot;,
     &quot;Application.CircleTest.executor&quot;: &quot;Run&quot;,
     &quot;Application.CodeGymManagement.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -100,24 +104,30 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="SS7_AbstractClass_Interface" />
+    <configuration name="CodeGymManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.CodeGymManagement" />
+      <module name="CGManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.CodeGymManagement" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -200,7 +210,18 @@
       <workItem from="1720514530646" duration="755000" />
       <workItem from="1720533597599" duration="697000" />
       <workItem from="1720597130642" duration="5015000" />
-      <workItem from="1720603536501" duration="2452000" />
+      <workItem from="1720603536501" duration="2705000" />
+      <workItem from="1720617821410" duration="121000" />
+      <workItem from="1720665013601" duration="1679000" />
+      <workItem from="1720686085233" duration="111000" />
+      <workItem from="1720698222412" duration="2421000" />
+      <workItem from="1720701132358" duration="5734000" />
+      <workItem from="1720777341327" duration="2304000" />
+      <workItem from="1720791024185" duration="6809000" />
+      <workItem from="1720834490309" duration="111000" />
+      <workItem from="1720869745104" duration="7532000" />
+      <workItem from="1720922462309" duration="67000" />
+      <workItem from="1720922574701" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -354,7 +375,39 @@
       <option name="project" value="LOCAL" />
       <updated>1720600189622</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="new func exportToCSV">
+      <option name="closed" value="true" />
+      <created>1720606454679</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720606454679</updated>
+    </task>
+    <task id="LOCAL-00021" summary="new func exportToCSV">
+      <option name="closed" value="true" />
+      <created>1720606469028</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720606469028</updated>
+    </task>
+    <task id="LOCAL-00022" summary="new func exportToCSV">
+      <option name="closed" value="true" />
+      <created>1720702550154</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720702550154</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update">
+      <option name="closed" value="true" />
+      <created>1720799701874</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1720799701874</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,9 +430,10 @@
     <MESSAGE value="ss6_Inheritance_Polymorphism" />
     <MESSAGE value="ss7_AbstractClass_Interface" />
     <MESSAGE value="update getStudentsByName()" />
-    <MESSAGE value="update" />
     <MESSAGE value="ss15_exception_debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="ss15_exception_debug" />
+    <MESSAGE value="update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

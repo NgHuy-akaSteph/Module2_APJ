@@ -49,6 +49,8 @@ public class CodeGymManagement {
                     6. Xuất file CSV từ List
                     7. Thêm học viên vào file CSV
                     8. Hiển thị danh sách học viên từ file CSV
+                    9. Chỉnh sửa thông tin HV trong file CSV
+                    10. Xóa học viên trong file CSV
                     0. Quay lại trang chủ
                     Nhập lựa chọn :\s""");
             int opt = Integer.parseInt(sc.nextLine());
@@ -76,6 +78,12 @@ public class CodeGymManagement {
                     break;
                 case 8:
                     studentController.displayAllStudentsFromCSV();
+                    break;
+                case 9:
+                    studentController.updateStudentInCSV();
+                    break;
+                case 10:
+                    studentController.deleteStudentInCSV();
                     break;
                 default:
                     System.out.println("Yêu cầu bạn nhập đúng lựa chọn!");
